@@ -30,7 +30,7 @@ class Human(Player):
             row = self._get_position_from_input("Row:    ")
 
             try:
-                if board.is_cell_empty(column, row):
+                if board.is_cell_empty(row=row, column=column):
                     break
 
                 print("The cell is already occupied. Please try again.")
